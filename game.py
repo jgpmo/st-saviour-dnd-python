@@ -19,9 +19,20 @@ if __name__ == '__main__':
     name = input('Name: ')
     role = input('Role: ')
 
-    print('Your name is ' + name + ' and your role is ' + role + '.')
-    print_dramatic_text('Our adventure begins in a shady tavern ...')
+    score = 0
 
-    input('Press Enter to roll a d6.')
-    roll = random.randint(1, 6)
-    draw_d6(roll)
+    print('Your name is ' + name + ' and your role is ' + role + '.')
+    print_dramatic_text('Welcome to my trivia game!')
+
+    answer = input('Question 1: What is Mr. Mazey\'s favorite animal?')
+    if answer == 'Fox':
+        score += 1
+        print_dramatic_text('Correct!')
+    else:
+        print_dramatic_text('Incorrect ...')
+
+    # input('Press Enter to roll a d6.')
+    # roll = random.randint(1, 6)
+    # draw_d6(roll)
+
+    print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
