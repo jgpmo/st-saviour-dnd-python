@@ -25,7 +25,7 @@ if __name__ == '__main__':
     print_dramatic_text('Welcome to my trivia game!')
 
     answer = input('Question 1: What is Mr. Mazey\'s favorite animal?')
-    if answer == 'Fox':
+    if answer.lower()== 'fox':
         score += 1
         print_dramatic_text('Correct!')
     else:
@@ -36,3 +36,22 @@ if __name__ == '__main__':
     # draw_d6(roll)
 
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
+
+    answer = input('Question 2: What is Mr. Mazey\'s favorite color?')
+    if answer == 'evergreen':
+        score += 2
+        print_dramatic_text('Correct!')
+    else:
+        print_dramatic_text('Incorrect ...')
+#congradulations and list new or no points
+    print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
+
+    answer = input('Question 3: What is Mr. Mazey\'s first name?')
+    if answer == 'Brandon':
+        score += 3
+        print_dramatic_text('Correct!')
+    else:
+        print_dramatic_text('Incorrect ...')
+
+    print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
+
