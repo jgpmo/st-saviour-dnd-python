@@ -47,8 +47,17 @@ if __name__ == '__main__':
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
     answer = input('Question 3: What is Mr. Mazey\'s first name?')
-    if answer == 'Brandon':
+    if answer == 'brandon':
         score += 3
+        print_dramatic_text('Correct!')
+    else:
+        print_dramatic_text('Incorrect ...')
+
+    print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
+
+    answer = input('Question 4: What is Mr. Mazey\'s favorite Anime?')
+    if answer == 'hunter hunter':
+        score += 4
         print_dramatic_text('Correct!')
     else:
         print_dramatic_text('Incorrect ...')
