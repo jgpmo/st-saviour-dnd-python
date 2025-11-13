@@ -24,8 +24,10 @@ if __name__ == '__main__':
     print('Your name is ' + name + ' and your role is ' + role + '.')
     print_dramatic_text('Welcome to my trivia game!')
 
-    answer = input('Question 1: What is Mr. Mazey\'s favorite animal?')
+    answer = input('Question 1: What is Mr. Mazey\'s favorite animal? ')
+    #put space between ? and ' so player can have room to type
     if answer.lower()== 'fox':
+        #i put all my answers in lowercase because people are lazy
         score += 1
         print_dramatic_text('Correct!')
     else:
@@ -37,7 +39,7 @@ if __name__ == '__main__':
 
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
-    answer = input('Question 2: What is Mr. Mazey\'s favorite color?')
+    answer = input('Question 2: What is Mr. Mazey\'s favorite color? ')
     if answer == 'evergreen':
         score += 2
         print_dramatic_text('Correct!')
@@ -46,7 +48,7 @@ if __name__ == '__main__':
 #congradulations and list new or no points
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
-    answer = input('Question 3: What is Mr. Mazey\'s first name?')
+    answer = input('Question 3: What is Mr. Mazey\'s first name? ')
     if answer == 'brandon':
         score += 3
         print_dramatic_text('Correct!')
@@ -55,9 +57,27 @@ if __name__ == '__main__':
 
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
-    answer = input('Question 4: What is Mr. Mazey\'s favorite Anime?')
+    answer = input('Question 4: What is Mr. Mazey\'s favorite Anime? ')
     if answer == 'hunter hunter':
         score += 4
+        print_dramatic_text('Correct!')
+    else:
+        print_dramatic_text('Incorrect ...')
+
+    print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
+
+    answer = input('Question 5: What is Mr. Mazey\'s least favorite subject? ')
+    if answer == 'spanish':
+        score += 5
+        print_dramatic_text('Correct!')
+    else:
+        print_dramatic_text('Incorrect ...')
+
+    print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
+
+    answer = input('Question 6: Where did Mr. Mazey go to college? ')
+    if answer == 'nyu':
+        score += 7
         print_dramatic_text('Correct!')
     else:
         print_dramatic_text('Incorrect ...')
