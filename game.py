@@ -84,3 +84,15 @@ if __name__ == '__main__':
 
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
+    print_dramatic_text('Ready ' + name + ' for the hardest question?')
+    answer = input (' Question 7: Where is Mr. Mazey from? ')
+    if answer == 'michigan':
+        score += 8
+        print_dramatic_text('Correct!')
+    else:
+        print_dramatic_text('Incorrect ...')
+
+    print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
+
+    print_dramatic_text('Congrats on finishing the trivia game! ' + ' You either know, or dont know Mr. Mazey. ')
+
