@@ -40,7 +40,7 @@ if __name__ == '__main__':
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
     answer = input('Question 2: What is Mr. Mazey\'s favorite color? ')
-    if answer == 'evergreen':
+    if answer.lower() == 'evergreen':
         score += 2
         print_dramatic_text('Correct!')
     else:
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
     answer = input('Question 3: What is Mr. Mazey\'s first name? ')
-    if answer == 'brandon':
+    if answer.lower() == 'brandon':
         score += 3
         print_dramatic_text('Correct!')
     else:
@@ -58,7 +58,8 @@ if __name__ == '__main__':
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
     answer = input('Question 4: What is Mr. Mazey\'s favorite Anime? ')
-    if answer == 'hunter hunter':
+    #put slash so the ' works
+    if answer.lower() == 'hunterxhunter':
         score += 4
         print_dramatic_text('Correct!')
     else:
@@ -67,7 +68,7 @@ if __name__ == '__main__':
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
     answer = input('Question 5: What is Mr. Mazey\'s least favorite subject? ')
-    if answer == 'spanish':
+    if answer.lower() == 'spanish':
         score += 5
         print_dramatic_text('Correct!')
     else:
@@ -76,7 +77,7 @@ if __name__ == '__main__':
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
     answer = input('Question 6: Where did Mr. Mazey go to college? ')
-    if answer == 'nyu':
+    if answer.lower() == 'nyu':
         score += 7
         print_dramatic_text('Correct!')
     else:
@@ -86,7 +87,7 @@ if __name__ == '__main__':
 
     print_dramatic_text('Ready ' + name + ' for the hardest question?')
     answer = input (' Question 7: Where is Mr. Mazey from? ')
-    if answer == 'michigan':
+    if answer.lower() == 'michigan':
         score += 8
         print_dramatic_text('Correct!')
     else:
@@ -95,4 +96,3 @@ if __name__ == '__main__':
     print_dramatic_text('Congratulations ' + name + ' you scored ' + str(score) + '!')
 
     print_dramatic_text('Congrats on finishing the trivia game! ' + ' You either know, or dont know Mr. Mazey. ')
-
